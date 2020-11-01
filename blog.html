@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vet Clinic</title>
+  <title>Blog</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -51,7 +51,7 @@
 
           <nav class="sitenav">
             <ul class="sitenav__list">
-              <li class="site-nav__item sitenav__item--active">
+              <li class="site-nav__item">
                 <a class="sitenav__link" href="index.html">Главная</a>
               </li>
               <li class="site-nav__item">
@@ -60,7 +60,7 @@
               <li class="site-nav__item">
                 <a class="sitenav__link" href="services.html">Наши Услуги</a>
               </li>
-              <li class="site-nav__item">
+              <li class="site-nav__item  sitenav__item--active">
                 <a class="sitenav__link" href="blog.html">Полезные Статьи</a>
               </li>
               <li class="site-nav__item">
@@ -76,50 +76,67 @@
     </div>
   </header><!-- SITE-HEADER -->
 
+
   <!-- SITE-MAIN -->
   <main class="site-main">
-
-    <!-- INTRO SECTION -->
-    <section class="intro">
+    <!-- BLOG-SECTION -->
+    <section class="blog-section">
       <div class="container">
-        <div class="intro__wrapper">
-          <h1 class="intro__heading">
-            <span class="intro__span">Мы заботимся о</span><br>ваших питомцах!</h1>
-            <p class="intro__text">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными.Профессионалы работающие в нашей клинике делают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры,которые необходимы Вашему домашнему любимцу.</p>
-            <a class="intro__link" href="services.html">Наши услуги</a>
+        <div class="blog-intro">
+          <h1 class="blog-intro__heading">Полезные статьи</h1>
+          <p class="blog-intro__text">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+        </div>
+
+        <div class="blog-info">
+          <img class="blog-info__img" src="img/two-dog/two-dog.jpg" srcset="img/two-dog/two-dog.jpg 1x, img/two-dog/two-dog@2x.jpg 2x" alt="two dog img" width="558" height="525">
+          <div class="blog-info__right">
+            <div class="blog-info__top">
+              <p class="blog-info__top-text">#собака #дом #уход</p>
+              <time class="blog-info__top-date" datetime="2020-08-29">29.08.2020</time>
+            </div>
+            <h2 class="blog-info__right-heading">Перед тем как завести собаку</h2>
+            <p class="blog-info__right-text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие. Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом.</p>
+            <a class="more-info-link" href="#">Читать больше</a>
           </div>
         </div>
-      </section> <!-- INTRO SECTION -->
 
-      <!-- QUOTE SECTION -->
-      <section class="quote">
-        <div class="container quote__container">
-          <h3 class="quote__title">Оржоникидзевская Ветеринарная клиника</h3>
-          <div class="quote__wrapper">
-            <hr class="quote__hr">
-            <p class="quote__text">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</p>
-            <hr class="quote__hr">
-          </div>
-        </div>
-      </section> <!-- QUOTE SECTION -->
+        <ul class="blog-section__list">
+          <li class="blog-section__item blog">
+            <div class="blog__wrapper blog-first">
+              <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+              <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
 
+          <li class="blog-section__item blog blog-second">
+            <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+            <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+            <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+            <a class="more-info-link" href="#">Читать больше</a>
+          </li>
 
+          <li class="blog-section__item blog blog-third">
+            <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+            <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+            <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+            <a class="more-info-link" href="#">Читать больше</a>
+          </li>
 
-      <!-- EVENTS SECTION -->
-      <section class="events">
-        <img class="events__img" src="img/big-dog/big-dog.png" srcset="img/big-dog/big-dog.png 1x, img/big-dog/big-dog@2x.png 2x" alt="dalmatin img" width="613" height="481">
-        <div class="container">
-          <form class="event__form" action="https://echo.htmlacademy.ru" method="POST">
-            <h2 class="events__heading">Будь в курсе событий</h2>
-            <input class="events__input" type="email" name="email" aria-label="enter your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Укажите Ваш email адрес" required>
-            <button class="events__btn" type="submit">Подписаться</button>
-          </form>
-        </div>
-      </section> <!-- EVENTS SECTION -->
-  </main><!-- SITE-MAIN -->
+          <li class="blog-section__item blog blog-forth">
+            <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+            <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+            <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+            <a class="more-info-link" href="#">Читать больше</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-  <!-- SITE-FOOTER -->
-  <footer class="site-footer">
+   <!-- SITE-FOOTER -->
+   <footer class="site-footer">
     <div class="container site-footer__container">
       <a class="site-footer__logo-link" href="index.html">
         <img class="site-footer__logo-img" src="img/logo.svg" alt="site logo" width="178" height="86">
@@ -178,6 +195,5 @@
       <p class="site-footer__text">© 2020 example. All Rights Reserved.</p>
     </div>
   </footer><!-- SITE-FOOTER -->
-
 </body>
 </html>
