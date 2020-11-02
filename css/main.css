@@ -257,9 +257,9 @@ img {
   margin-left: 0;
 }
 
-.phones__column .phones__item::before{
+/* .phones__column .phones__item::before{
   display: none;
-}
+} */
 
 .phones__column .phones__item + .phones__item{
   margin-top: 4px;
@@ -617,7 +617,6 @@ img {
   opacity: 0.6;
 }
 
-
 .intro__link:hover{
   color: #333;
 }
@@ -817,6 +816,7 @@ img {
 
 .contact-search__bottom-wrapper{
   display: flex;
+  justify-content: center;
   margin-left: -50px;
 }
 
@@ -824,9 +824,15 @@ img {
   display: block;
 }
 
-.contact-search__img{
+.contact-search__img-left{
+  width: 847px;
   height: 466px;
   display: block;
+}
+
+.contact-search__img-right{
+  height: 466px;
+  width: 593px;
 }
 
 
