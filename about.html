@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vet Clinic</title>
+  <title>About</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -51,10 +51,10 @@
 
           <nav class="sitenav">
             <ul class="sitenav__list">
-              <li class="site-nav__item sitenav__item--active">
+              <li class="site-nav__item">
                 <a class="sitenav__link" href="index.html">Главная</a>
               </li>
-              <li class="site-nav__item">
+              <li class="site-nav__item sitenav__item--active">
                 <a class="sitenav__link" href="about.html">О Клинике</a>
               </li>
               <li class="site-nav__item">
@@ -72,54 +72,45 @@
             </ul>
           </nav>
           <a class="question-link" href="question.html">Задать вопрос</a>
+          <div class="div__wrapper open">
+            <div class="div">
+              <button class="div__close" type="button">X</button>
+              <div class="div__inner">
+                <img class="div__img" src="img/sign-up-img/sign-up-img.png" alt="kuchukcha" width="46" height="57">
+                <p class="div__text">Вы успешно<br>подписаны!</p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </header><!-- SITE-HEADER -->
 
+
   <!-- SITE-MAIN -->
   <main class="site-main">
-
-    <!-- INTRO SECTION -->
-    <section class="intro">
+    <!-- ABOUT-SECTION -->
+    <section class="about-section">
       <div class="container">
-        <div class="intro__wrapper">
-          <h1 class="intro__heading">
-            <span class="intro__span">Мы заботимся о</span><br>ваших питомцах!</h1>
-            <p class="intro__text">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными.Профессионалы работающие в нашей клинике делают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры,которые необходимы Вашему домашнему любимцу.</p>
-            <a class="intro__link" href="services.html">Наши услуги</a>
-          </div>
+        <div class="about-intro">
+          <h1 class="about-intro__heading">О клинике</h1>
+          <p class="about-intro__text">Собака, кошка, попугай, шиншилла… Сколько радости и тепла приносят эти весёлые друзья в наш дом.</p>
+          <img class="about-intro__img" src="img/contact-search-bg/contact-search-bg.png" alt="" width="668" height="235">
         </div>
-      </section> <!-- INTRO SECTION -->
-
-      <!-- QUOTE SECTION -->
-      <section class="quote">
-        <div class="container quote__container">
-          <h3 class="quote__title">Оржоникидзевская Ветеринарная клиника</h3>
-          <div class="quote__wrapper">
-            <hr class="quote__hr">
-            <p class="quote__text">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</p>
-            <hr class="quote__hr">
-          </div>
-        </div>
-      </section> <!-- QUOTE SECTION -->
+      </div>
+          <section class="about-info">
+            <div class="about-info__left">
+              <img class="about-info__img" src="img/contact-home-img/contact-home-img.jpg" alt="home" width="705" height="449">
+            </div>
+            <div class="about-info__right">
+              <p class="about-info__right-text">Принимая решение о том, чтобы завести домашнего любимца, или уже имея его, мы не должны забывать, что животное это живой организм, который требует не только нашей любви, а и заботы о её здоровье и  внешнем виде. Ответственность хозяина заключается в чётком выполнении правил по уходу за животным, своевременного обращения к врачу за консультацией и помощи в решении любого вопроса. Ведь мы в ответе за тех, кого приручили!</p>
+            </div>
+          </section>
+    </section>
+  </main>
 
 
-
-      <!-- EVENTS SECTION -->
-      <section class="events">
-        <img class="events__img" src="img/big-dog/big-dog.png" srcset="img/big-dog/big-dog.png 1x, img/big-dog/big-dog@2x.png 2x" alt="dalmatin img" width="613" height="481">
-        <div class="container">
-          <form class="event__form" action="https://echo.htmlacademy.ru" method="POST">
-            <h2 class="events__heading">Будь в курсе событий</h2>
-            <input class="events__input" type="email" name="email" aria-label="enter your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Укажите Ваш email адрес" required>
-            <button class="events__btn" type="submit">Подписаться</button>
-          </form>
-        </div>
-      </section> <!-- EVENTS SECTION -->
-  </main><!-- SITE-MAIN -->
-
-  <!-- SITE-FOOTER -->
-  <footer class="site-footer">
+   <!-- SITE-FOOTER -->
+   <footer class="site-footer">
     <div class="container site-footer__container">
       <a class="site-footer__logo-link" href="index.html">
         <img class="site-footer__logo-img" src="img/logo.svg" alt="site logo" width="178" height="86">
