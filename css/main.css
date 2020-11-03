@@ -1497,11 +1497,11 @@ img {
 
 .about-intro {
   padding-top: 110px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   margin-left: 100px;
   background-image: url("../img/about-bg/about-bg.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + 320px);
+  background-position: calc(50% + 320px) 20px;
   background-size: auto 545px;
 }
 
@@ -1528,7 +1528,7 @@ img {
 
 .about-info {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   width: 1440px;
 }
@@ -1537,9 +1537,13 @@ img {
   flex-grow: 1;
 }
 .about-info__img {
+  min-width: 705px;
+  min-height: 449px;
 }
 .about-info__right {
   flex-grow: 1;
+  background-color: #fff;
+  min-height: 449px;
 }
 .about-info__right-text {
 }
