@@ -11,6 +11,7 @@
 /* 11. CONTACT-HTML-STYLES */
 /* 12. SITE-FOOTER-STYLES */
 /* 13. MODAL */
+/* 14. RETINA */
 
 
 @font-face {
@@ -426,7 +427,7 @@ img {
 .intro {
   padding: 150px 0 290px 0;
   background-image: url("../img/intro-bg/intro-bg.png"),
-                    url("../img/toti/toti.png");
+  url("../img/toti/toti.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 530px) -88px, calc(50% + 690px) 395px;
   background-size: auto 834px, auto 430px;
@@ -1511,7 +1512,7 @@ img {
   padding-top: 110px;
   padding-bottom: 270px;
   background-image: url("../img/faq-section-bg/faq-section-bg.png"),
-                    url("../img/faq-section-bg-2/faq-section-bg-2.png");
+  url("../img/faq-section-bg-2/faq-section-bg-2.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 495px) 50px, calc(50% + 440px) 960px;
   background-size: auto 466px, auto 652px;
@@ -2115,7 +2116,7 @@ img {
   padding: 120px 50px 137px 70px;
   background-color: #FFBD54;
   background-image: url("../img/modal-bg/modal-bg.png"),
-                    url("../img/modal-dog/modal-dog.png");
+  url("../img/modal-dog/modal-dog.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 45px), calc(50% - 210px) 317px;
   background-size: cover, auto 348px;
@@ -2241,4 +2242,113 @@ img {
   color: var(--black);
   background-color: #fff;
   border: 2px solid var(--black);
+}
+
+/* RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  /* SITE-MAIN */
+  .site-main{
+    background-image: url("../img/background/bg@2x.png");
+  }
+  .intro {
+    background-image: url("../img/intro-bg/intro-bg@2x.png"),
+    url("../img/toti/toti@2x.png");
+  }
+  .quote {
+    background-image: url("../img/catch/catch@2x.png"),
+    url("../img/catch-2/catch-2@2x.png");
+  }
+  .events {
+    background-image: url("../img/events-bg/events-bg@2x.png");
+  }
+  .about-intro {
+    background-image: url("../img/about-bg/about-bg@2x.png");
+  }
+  .services-page {
+    background-image: url("../img/bg-toti/bg-toti@2x.png");
+  }
+  .services-page__item{
+    background-image: url("../img/panja/panja@2x.png");
+  }
+  .services-page__item:nth-child(odd){
+    background-image: url("../img/panja-blue/panja-blue@2x.png");
+  }
+  .doctor-male::before {
+    background-image: url("../img/services-icons/doctor-male@2x.png");
+  }
+  .doctor-female::before {
+    background-image: url("../img/services-icons/doctor-female@2x.png");
+  }
+  .surgical-intervention::before {
+    background-image: url("../img/services-icons/surgical-intervention@2x.png");
+  }
+  .dermatology::before {
+    background-image: url("../img/services-icons/dermatology@2x.png");
+  }
+  .laboratory-diagnostics::before {
+    background-image: url("../img/services-icons/laboratory-diagnostics@2x.png");
+  }
+  .ophthalmology::before {
+    background-image: url("../img/services-icons/ophthalmology@2x.png");
+  }
+  .ultrasound-diagnostics::before {
+    background-image: url("../img/services-icons/ultrasound-diagnostics@2x.png");
+  }
+  .chipping::before {
+    background-image: url("../img/services-icons/chipping@2x.png");
+  }
+  .international-passports::before {
+    background-image: url("../img/services-icons/international-passports@2x.png");
+  }
+  .vaccination::before {
+    background-image: url("../img/services-icons/vaccination@2x.png");
+  }
+  .stomatology::before {
+    background-image: url("../img/services-icons/stomatology@2x.png");
+  }
+  .home-call-bug::before {
+    background-image: url("../img/services-icons/home-call-bug@2x.png");
+  }
+  .services-open-bg{
+    background-image: url("../img/services-open-bg/services-open-bg@2x.jpg");
+  }
+  .questions-section {
+    background-image: url("../img/questions-section-bg/questions-section-bg@2x.png");
+  }
+  .blog-intro {
+    background-image: url("../img/blog-bg/blog-bg@2x.png");
+  }
+  .faq-section {
+    background-image: url("../img/faq-section-bg/faq-section-bg@2x.png"),
+    url("../img/faq-section-bg-2/faq-section-bg-2@2x.png");
+  }
+  .faq__header-top::before{
+    background-image: url("../img/faq-panja/faq-panja@2x.png");
+  }
+  .faq:nth-child(even) .faq__header-top::before{
+    background-image: url("../img/faq-panja-blue/faq-panfa-blue@2x.png");
+  }
+  .contact-intro {
+    background-image: url("../img/contact-bg/contact-bg@2x.png");
+  }
+  .contact-intro__address-wrapper::before{
+    background-image: url("../img/contact-location/contact-location@2x.png");
+  }
+  .contact-intro__work-hours--wrapper::before{
+    background-image: url("../img/contact-calendar/contact-calendar@2x.png");
+  }
+  .contact-intro__phones-wrapper::before{
+    background-image: url("../img/contact-phone/contact-phone@2x.png");
+  }
+  .contact-search__top-wrapper{
+    background-image: url("../img/contact-search-bg/contact-search-bg@2x.png");
+  }
+
 }
