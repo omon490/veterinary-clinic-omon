@@ -71,7 +71,7 @@
             </li>
           </ul>
         </nav>
-        <a class="question-link" href="question.html">Задать вопрос</a>
+        <a class="question-link">Задать вопрос</a>
       </div>
     </div>
   </header>
@@ -199,6 +199,44 @@
       <p class="site-footer__text">© 2020 example. All Rights Reserved.</p>
     </div>
   </footer><!-- SITE-FOOTER -->
+
+  <section class="modal">
+    <div class="modal-content">
+      <div class="modal-dialog">
+        <button class="close-buttton" type="button">X</button>
+        <div class="modal-dialog__left-box">
+          <h3 class="modal-dialog__left-heading">Авторизация:</h3>
+          <a class="modal-dialog__left-link google" href="#">Войти через Google</a>
+          <a class="modal-dialog__left-link facebook" href="#">Войти через Facebook</a>
+        </div>
+        <div class="modal-dialog__right-box">
+          <h3 class="modal-dialog__right-heading">Задать вопрос</h3>
+          <form class="modal-dialog__form" action="https://echo.htmlacademy.ru">
+            <input class="modal-dialog__input" type="text" name="name" aria-label="enter your name" placeholder="Ваше имя" required>
+            <div class="modal-dialog__textarea-box">
+              <textarea class="modal-dialog__textarea" name="message" aria-label="enter your message" cols="30" rows="7" placeholder="Опишите Ваш вопрос." required></textarea>
+              <div class="modal-dialog__textarea-inner-box">Например: в каком возрасте можно прививать от бешенства?</div>
+            </div>
+            <button class="modal-dialog__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var elModalToggler = document.querySelector('.question-link');
+    var elModal = document.querySelector('.modal');
+    var elModalClose =document.querySelector('.close-buttton');
+
+    elModalToggler.addEventListener('click', function (){
+      elModal.classList.add('modal--open');
+    });
+
+    elModalClose.addEventListener('click', function () {
+      elModal.classList.remove('modal--open');
+    });
+  </script>
 
 </body>
 </html>
