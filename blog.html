@@ -85,7 +85,6 @@
     </div>
   </header><!-- SITE-HEADER -->
 
-
   <!-- SITE-MAIN -->
   <main class="site-main">
     <!-- BLOG-SECTION -->
@@ -205,22 +204,22 @@
       </a>
       <ul class="site-footer__list">
         <li class="site-footer__item">
-          <a class="site-footer__link" href="#">Главная</a>
+          <a class="site-footer__link" href="index.html">Главная</a>
         </li>
         <li class="site-footer__item">
-          <a class="site-footer__link" href="#">О Клинике</a>
+          <a class="site-footer__link" href="about.html">О Клинике</a>
         </li>
         <li class="site-footer__item">
-          <a class="site-footer__link" href="#">Наши Услуги</a>
+          <a class="site-footer__link" href="services.html">Наши Услуги</a>
         </li>
         <li class="site-footer__item">
-          <a class="site-footer__link" href="#">Полезные Статьи</a>
+          <a class="site-footer__link" href="blog.html">Полезные Статьи</a>
         </li>
         <li class="site-footer__item">
-          <a class="site-footer__link" href="#">FAQ</a>
+          <a class="site-footer__link" href="faq.html">FAQ</a>
         </li>
         <li class="site-footer__item">
-          <a class="site-footer__link" href="#">Контакты</a>
+          <a class="site-footer__link" href="contact.html">Контакты</a>
         </li>
       </ul>
 
@@ -258,6 +257,7 @@
     </div>
   </footer><!-- SITE-FOOTER -->
 
+  <!-- MODAL -->
   <section class="modal">
     <div class="modal-content">
       <div class="modal-dialog">
@@ -280,8 +280,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- MODAL -->
 
+  <!-- JS -->
   <script>
     var elModalToggler = document.querySelector('.question-link');
     var elModal = document.querySelector('.modal');
@@ -294,6 +295,7 @@
     elModalClose.addEventListener('click', function () {
       elModal.classList.remove('modal--open');
     });
-  </script>
+  </script><!-- JS -->
+
 </body>
 </html>
