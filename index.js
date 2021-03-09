@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
     linkFaq: "FAQ",
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
+    copyright: "© 2020 example. All Rights Reserved.",
     heading: "Мы заботимся о",
     headingSpan: "ваших питомцах!",
   })

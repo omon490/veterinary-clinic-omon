@@ -122,65 +122,105 @@
     </main><!-- SITE-MAIN -->
 
     <!-- SITE-FOOTER -->
-    <footer class="site-footer">
-      <div class="container site-footer__container">
-        <a class="site-footer__logo-link" href="index.html">
-          <img class="site-footer__logo-img" src="img/logo.svg" alt="site logo" width="178" height="86">
-        </a>
-        <ul class="site-footer__list">
-          <li class="site-footer__item">
-            <a class="site-footer__link" href="index.html">Главная</a>
+  <footer class="site-footer">
+    <div class="container site-footer__container">
+      <a class="site-footer__logo-link" href="index.html">
+        <img class="site-footer__logo-img" src="img/logo.svg" alt="site logo" width="178" height="86">
+      </a>
+      <ul class="site-footer__list">
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="/"><%=linkHome %></a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="/about"><%=linkAbout %></a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="/services"><%=linkService %></a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="/blog"><%=linkBlog %></a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="/faq"><%=linkFaq %></a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="/contact"><%=linkContact %></a>
+        </li>
+      </ul>
+
+      <div class="site-footer__work-hours--wrapper">
+        <ul class="site-footer__work-hours--list">
+          <li class="site-footer__work-hours--item">
+            <b class="site-footer__work-hours--day"><%=workHours %></b>
+            <time class="site-footer__work-hours--time" datetime="08:00"><%=dataTime %></time> - <time class="site-footer__work-hours--time" datetime="18:00">18:00</time>
           </li>
-          <li class="site-footer__item">
-            <a class="site-footer__link" href="about.html">О Клинике</a>
-          </li>
-          <li class="site-footer__item">
-            <a class="site-footer__link" href="services.html">Наши Услуги</a>
-          </li>
-          <li class="site-footer__item">
-            <a class="site-footer__link" href="blog.html">Полезные Статьи</a>
-          </li>
-          <li class="site-footer__item">
-            <a class="site-footer__link" href="faq.html">FAQ</a>
-          </li>
-          <li class="site-footer__item">
-            <a class="site-footer__link" href="contact.html">Контакты</a>
+          <li class="site-footer__work-hours--item">
+            <b class="site-footer__work-hours--day"><%=workHours2 %></b>
+            <time class="site-footer__work-hours--time" datetime="08:00"><%=dataTime %></time> - <time class="site-footer__work-hours--time" datetime="14:00">14:00</time>
           </li>
         </ul>
-
-        <div class="site-footer__work-hours--wrapper">
-          <ul class="site-footer__work-hours--list">
-            <li class="site-footer__work-hours--item">
-              <b class="site-footer__work-hours--day">Пн - Пт</b>
-              <time class="site-footer__work-hours--time" datetime="08:00">8:00</time> - <time class="site-footer__work-hours--time" datetime="18:00">18:00</time>
-            </li>
-            <li class="site-footer__work-hours--item">
-              <b class="site-footer__work-hours--day">Сб - Вс</b>
-              <time class="site-footer__work-hours--time" datetime="08:00">8:00</time> - <time class="site-footer__work-hours--time" datetime="14:00">14:00</time>
-            </li>
-          </ul>
-        </div>
-
-        <div class="site-footer__address-wrapper">
-          <address class="site-footer__address">г. Мариуполь, проспект Победы, 48а</address>
-        </div>
-
-        <div class="site-footer__phones-wrapper">
-          <ul class="site-footer__phones--list">
-            <li class="site-footer__phones--item">
-              <a class="site-footer__phones--link" href="tel:+0676347574">(067) 634 -75 - 74</a>
-            </li>
-            <li class="site-footer__phones--item">
-              <a class="site-footer__phones--link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
-            </li>
-            <li class="site-footer__phones--item">
-              <a class="site-footer__phones--link" href="tel:+0982664389">(098) 266 - 43 - 89</a>
-            </li>
-          </ul>
-        </div>
-        <p class="site-footer__text">© 2020 example. All Rights Reserved.</p>
       </div>
-    </footer><!-- SITE-FOOTER -->
+
+      <div class="site-footer__address-wrapper">
+        <address class="site-footer__address"><%=address %></address>
+      </div>
+
+      <div class="site-footer__phones-wrapper">
+        <ul class="site-footer__phones--list">
+          <li class="site-footer__phones--item">
+            <a class="site-footer__phones--link" href="tel:+0676347574"><%=tel1 %></a>
+          </li>
+          <li class="site-footer__phones--item">
+            <a class="site-footer__phones--link" href="tel:+0637570131"><%=tel2 %></a>
+          </li>
+          <li class="site-footer__phones--item">
+            <a class="site-footer__phones--link" href="tel:+0982664389"><%=tel3 %></a>
+          </li>
+        </ul>
+      </div>
+      <p class="site-footer__text"><%=copyright %></p>
+    </div>
+  </footer><!-- SITE-FOOTER -->
+
+    <!-- MODAL -->
+    <section class="modal">
+      <div class="modal-content">
+        <div class="modal-dialog">
+          <button class="close-buttton" type="button">X</button>
+          <div class="modal-dialog__left-box">
+            <h3 class="modal-dialog__left-heading">Авторизация:</h3>
+            <a class="modal-dialog__left-link google" href="#">Войти через Google</a>
+            <a class="modal-dialog__left-link facebook" href="#">Войти через Facebook</a>
+          </div>
+          <div class="modal-dialog__right-box">
+            <h3 class="modal-dialog__right-heading">Задать вопрос</h3>
+            <form class="modal-dialog__form" action="https://echo.htmlacademy.ru">
+              <input class="modal-dialog__input" type="text" name="name" aria-label="enter your name" placeholder="Ваше имя" required>
+              <div class="modal-dialog__textarea-box">
+                <textarea class="modal-dialog__textarea" name="message" aria-label="enter your message" cols="30" rows="7" placeholder="Опишите Ваш вопрос." required></textarea>
+                <div class="modal-dialog__textarea-inner-box">Например: в каком возрасте можно прививать от бешенства?</div>
+              </div>
+              <button class="modal-dialog__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- MODAL -->
+
+    <!-- JS -->
+    <script>
+      var elModalToggler = document.querySelector('.question-link');
+      var elModal = document.querySelector('.modal');
+      var elModalClose =document.querySelector('.close-buttton');
+
+      elModalToggler.addEventListener('click', function (){
+        elModal.classList.add('modal--open');
+      });
+
+      elModalClose.addEventListener('click', function () {
+        elModal.classList.remove('modal--open');
+      });
+    </script><!-- JS -->
 
   </body>
   </html>
