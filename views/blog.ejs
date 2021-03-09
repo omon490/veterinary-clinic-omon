@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" type="text/css" href="./design/main.css">
+  <link rel="stylesheet" type="text/css" href="./design/normalize.css">
+</head>
+<body>
+
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <!-- site-header-top -->
+    <div class="site-header__top">
+      <div class="container site-header__top-container">
+        <address class="site-header__address">г. Мариуполь, проспект Победы, 48а</address>
+
+        <ul class="phones">
+          <li class="phones__item">
+            <a class="phones__link" href="tel:+0676347574">(067) 634 -75 - 74</a>
+          </li>
+          <li class="phones__item">
+            <a class="phones__link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
+          </li>
+          <li class="phones__item">
+            <a class="phones__link" href="tel:+0982664389">(098) 266 - 43 - 89</a>
+          </li>
+        </ul>
+        <ul class="work-hours">
+          <li class="work-hours__item">
+            <b class="work-hours__day">Пн - Пт</b>
+            <time class="work-hours__time" datetime="08:00">8:00</time> - <time class="work-hours__time" datetime="18:00">18:00</time>
+          </li>
+          <li class="work-hours__item">
+            <b class="work-hours__day">Сб - Вс</b>
+            <time class="work-hours__time" datetime="08:00">8:00</time> - <time class="work-hours__time" datetime="14:00">14:00</time>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SITE-HEADER BOTTOM -->
+    <div class="site-header__bottom">
+      <div class="container site-header__bottom-container">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/logo.svg" alt="site logo" width="178" height="86">
+          </a>
+        </div>
+
+          <nav class="sitenav">
+            <ul class="sitenav__list">
+              <li class="site-nav__item sitenav__item--active">
+                <a class="sitenav__link" href="/">Главная</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="sitenav__link" href="/about">О Клинике</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="sitenav__link" href="/services">Наши Услуги</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="sitenav__link" href="/blog">Полезные Статьи</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="sitenav__link" href="/faq">FAQ</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="sitenav__link" href="/contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="question-link">Задать вопрос</a>
+          <div class="div__wrapper">
+            <div class="div">
+              <button class="div__close" type="button">X</button>
+              <div class="div__inner">
+                <img class="div__img" src="img/sign-up-img/sign-up-img.png" alt="kuchukcha" width="46" height="57">
+                <p class="div__text">Вы успешно<br>подписаны!</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header><!-- SITE-HEADER -->
+
+  <!-- SITE-MAIN -->
+  <main class="site-main">
+    <!-- BLOG-SECTION -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="blog-intro">
+          <h1 class="blog-intro__heading">Полезные статьи</h1>
+          <p class="blog-intro__text">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+        </div>
+
+        <div class="blog-info">
+          <img class="blog-info__img" src="img/two-dog/two-dog.jpg" srcset="img/two-dog/two-dog.jpg 1x, img/two-dog/two-dog@2x.jpg 2x" alt="two dog img" width="558" height="525">
+          <div class="blog-info__right">
+            <div class="blog-info__top">
+              <p class="blog-info__top-text">#собака #дом #уход</p>
+              <time class="blog-info__top-date" datetime="2020-08-29">29.08.2020</time>
+            </div>
+            <h2 class="blog-info__right-heading">Перед тем как завести собаку</h2>
+            <p class="blog-info__right-text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие. Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом.</p>
+            <a class="more-info-link" href="#">Читать больше</a>
+          </div>
+        </div>
+
+        <ul class="blog-section__list">
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-1.jpg" srcset="img/blog-item-img/blog-item-img-1.jpg 1x, img/blog-item-img/blog-item-img-1@2x.jpg 2x" alt="cat img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+              <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-2.jpg" srcset="img/blog-item-img/blog-item-img-2.jpg 1x, img/blog-item-img/blog-item-img-2@2x.jpg 2x" alt="white dog img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">21.07.2020</time>
+              <h3 class="blog__title">Когда привавать питомца?</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-3.jpg" srcset="img/blog-item-img/blog-item-img-3.jpg 1x, img/blog-item-img/blog-item-img-3@2x.jpg 2x" alt="two dog in bath" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">28.09.2020</time>
+              <h3 class="blog__title">Как правильно купать животных</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-1.jpg" srcset="img/blog-item-img/blog-item-img-1.jpg 1x, img/blog-item-img/blog-item-img-1@2x.jpg 2x" alt="cat img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+              <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-4.jpg" srcset="img/blog-item-img/blog-item-img-4.jpg 1x, img/blog-item-img/blog-item-img-4@2x.jpg 2x" alt="black cat img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+              <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-5.jpg" srcset="img/blog-item-img/blog-item-img-5.jpg 1x, img/blog-item-img/blog-item-img-5@2x.jpg 2x" alt="two rabbit img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">21.07.2020</time>
+              <h3 class="blog__title">Когда привавать питомца?</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-6.jpg" srcset="img/blog-item-img/blog-item-img-6.jpg 1x, img/blog-item-img/blog-item-img-6@2x.jpg 2x" alt="dog img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">28.09.2020</time>
+              <h3 class="blog__title">Как правильно купать животных</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+
+          <li class="blog-section__item blog">
+            <img class="blog__img" src="img/blog-item-img/blog-item-img-7.jpg" srcset="img/blog-item-img/blog-item-img-7.jpg 1x, img/blog-item-img/blog-item-img-7@2x.jpg 2x" alt="dog img" width="305" height="180">
+            <div class="blog__wrapper">
+              <time class="blog__time" datetime="2020-08-28">28.08.2020</time>
+              <h3 class="blog__title">Ультразвуковая чистка зубов</h3>
+              <p class="blog__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+              <a class="more-info-link" href="#">Читать больше</a>
+            </div>
+          </li>
+        </ul>
+        <div class="blog-section__link-wrapper">
+          <a class="blog-section__link" href="#">Больше статей</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <!-- SITE-FOOTER -->
+   <footer class="site-footer">
+    <div class="container site-footer__container">
+      <a class="site-footer__logo-link" href="index.html">
+        <img class="site-footer__logo-img" src="img/logo.svg" alt="site logo" width="178" height="86">
+      </a>
+      <ul class="site-footer__list">
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="about.html">О Клинике</a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="services.html">Наши Услуги</a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="blog.html">Полезные Статьи</a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="faq.html">FAQ</a>
+        </li>
+        <li class="site-footer__item">
+          <a class="site-footer__link" href="contact.html">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="site-footer__work-hours--wrapper">
+        <ul class="site-footer__work-hours--list">
+          <li class="site-footer__work-hours--item">
+            <b class="site-footer__work-hours--day">Пн - Пт</b>
+            <time class="site-footer__work-hours--time" datetime="08:00">8:00</time> - <time class="site-footer__work-hours--time" datetime="18:00">18:00</time>
+          </li>
+          <li class="site-footer__work-hours--item">
+            <b class="site-footer__work-hours--day">Сб - Вс</b>
+            <time class="site-footer__work-hours--time" datetime="08:00">8:00</time> - <time class="site-footer__work-hours--time" datetime="14:00">14:00</time>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-footer__address-wrapper">
+        <address class="site-footer__address">г. Мариуполь, проспект Победы, 48а</address>
+      </div>
+
+      <div class="site-footer__phones-wrapper">
+        <ul class="site-footer__phones--list">
+          <li class="site-footer__phones--item">
+            <a class="site-footer__phones--link" href="tel:+0676347574">(067) 634 -75 - 74</a>
+          </li>
+          <li class="site-footer__phones--item">
+            <a class="site-footer__phones--link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
+          </li>
+          <li class="site-footer__phones--item">
+            <a class="site-footer__phones--link" href="tel:+0982664389">(098) 266 - 43 - 89</a>
+          </li>
+        </ul>
+      </div>
+      <p class="site-footer__text">© 2020 example. All Rights Reserved.</p>
+    </div>
+  </footer><!-- SITE-FOOTER -->
+
+  <!-- MODAL -->
+  <section class="modal">
+    <div class="modal-content">
+      <div class="modal-dialog">
+        <button class="close-buttton" type="button">X</button>
+        <div class="modal-dialog__left-box">
+          <h3 class="modal-dialog__left-heading">Авторизация:</h3>
+          <a class="modal-dialog__left-link google" href="#">Войти через Google</a>
+          <a class="modal-dialog__left-link facebook" href="#">Войти через Facebook</a>
+        </div>
+        <div class="modal-dialog__right-box">
+          <h3 class="modal-dialog__right-heading">Задать вопрос</h3>
+          <form class="modal-dialog__form" action="https://echo.htmlacademy.ru">
+            <input class="modal-dialog__input" type="text" name="name" aria-label="enter your name" placeholder="Ваше имя" required>
+            <div class="modal-dialog__textarea-box">
+              <textarea class="modal-dialog__textarea" name="message" aria-label="enter your message" cols="30" rows="7" placeholder="Опишите Ваш вопрос." required></textarea>
+              <div class="modal-dialog__textarea-inner-box">Например: в каком возрасте можно прививать от бешенства?</div>
+            </div>
+            <button class="modal-dialog__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section><!-- MODAL -->
+
+  <!-- JS -->
+  <script>
+    var elModalToggler = document.querySelector('.question-link');
+    var elModal = document.querySelector('.modal');
+    var elModalClose =document.querySelector('.close-buttton');
+
+    elModalToggler.addEventListener('click', function (){
+      elModal.classList.add('modal--open');
+    });
+
+    elModalClose.addEventListener('click', function () {
+      elModal.classList.remove('modal--open');
+    });
+  </script><!-- JS -->
+
+</body>
+</html>
