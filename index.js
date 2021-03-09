@@ -49,6 +49,7 @@ app.get("/about", (req, res) => {
     linkFaq: "FAQ",
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
+    copyright: "© 2020 example. All Rights Reserved.",
     aboutHeading: "О клинике",
   })
 
@@ -71,6 +72,7 @@ app.get("/services", (req, res) => {
     linkFaq: "FAQ",
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
+    copyright: "© 2020 example. All Rights Reserved.",
     aboutHeading: "О клинике",
   })
 
@@ -93,6 +95,7 @@ app.get("/blog", (req, res) => {
     linkFaq: "FAQ",
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
+    copyright: "© 2020 example. All Rights Reserved.",
     aboutHeading: "О клинике",
   })
 
@@ -115,6 +118,7 @@ app.get("/faq", (req, res) => {
     linkFaq: "FAQ",
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
+    copyright: "© 2020 example. All Rights Reserved.",
     aboutHeading: "О клинике",
   })
 
@@ -137,6 +141,7 @@ app.get("/contact", (req, res) => {
     linkFaq: "FAQ",
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
+    copyright: "© 2020 example. All Rights Reserved.",
     aboutHeading: "О клинике",
   })
 
