@@ -6,6 +6,8 @@ app.set("view engine", "ejs")
 
 app.use("/design", express.static("assets/css"))
 
+app.use(express.static("img"))
+
 const port = process.env.PORT || 4000
 
 app.get("/", (req, res) => {
@@ -26,6 +28,7 @@ app.get("/", (req, res) => {
     linkContact: "Контакты",
     linkQuestion: "Задать вопрос",
     copyright: "© 2020 example. All Rights Reserved.",
+    logo: "./logo.svg",
     heading: "Мы заботимся о",
     headingSpan: "ваших питомцах!",
   })
